@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Nintendo Battle Game</title>
+
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <h2>Mario VS MegaMan Vs Zelda</h2>
+      <h5>Pick one, the computer will pick one and find out who won! Good luck!</h5>
+    </div>
+
+    <div class="legend">
+      <p>Pick one, the computer will pick one and find out who won!</p>
+      <p>Rock beat Scissors, scissors beat paper, paper beat rock!</p>
+    </div>
+
+    <div class="game">
+      <!-- first button mario PAPER -->
+      <img src="sprites/supermario.png" alt="mario-paper" id="paper" onclick="playGame('paper'); ">
+      <!-- Pozivamo funkciju playGame samo menjamo na svakom buttonu parametar papir pa kamen pa makaze-->
+
+      <!-- second button megaman ROCK -->
+      <img src="sprites/megaman.png" alt="megaman-rock" id="rock" onclick="playGame('rock'); ">
+
+      <!-- third button zelda SCISSORS -->
+      <img src="sprites/zelda.png" alt="zelda-scissors" id="scissors" onclick="playGame('scissors'); ">
+    </div>
+
+    <div>
+      <p id="win-paragraph">Let's fight!
+      </p>
+    </div>
+
+    <div class="score-box">
+      <div>
+        <img src="img/win.png" alt="win">
+        <p>Player Win</p>
+        <p id="win-score">0</p>
+      </div>
+      <div>
+        <img src="img/lose.png" alt="lose">
+        <p>Computer Win</p>
+        <p id="lose-score">0</p>
+      </div>
+      <div>
+        <img src="img/draw.png" alt="draw">
+        <p>Draw</p>
+        <p id="draw">0</p>
+      </div>
+
+      <button onclick="resetScore(); ">NEW GAME</button>
+
+
+    </div>
+
+    <div class="footer">
+      <img src="img/logo.png" alt="fake nintendo">
+      <p>Created by Stefantnt 2021</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+
+
+
+</body>
+
+</html>

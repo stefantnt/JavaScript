@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+.cotainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: greenyellow;
+}
+
+.nav h5 {
+    color: azure;
+    margin-top: 10px;
+}
+
+.legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 50px;
+
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+    justify-content: space-around;
+
+}
+
+.game img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10%;
+
+}
+
+.game img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+
+
+}
+
+#win-paragraph {
+    font-family: 'Press Start 2P', cursive;
+    padding-bottom: 50px;
+
+}
+
+.score-box {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    border: 2px solid black;
+    font-family: 'Press Start 2P', cursive;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.score-box div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.score-box img {
+    height: 35px;
+    width: 35px;
+    border-radius: 10%;
+    margin-bottom: 5px;
+}
+
+.score-box button {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: white;
+    background-color: greenyellow;
+
+}
+
+.score-box button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.score-box p {
+    margin-bottom: 5px;
+}
+
+#win-score {
+    color: greenyellow;
+
+}
+
+#lose-score {
+    color: greenyellow;
+
+}
+
+#draw {
+    color: greenyellow;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+}
+
+.footer img {
+    width: 200px;
+    height: 80px;
+
+}
