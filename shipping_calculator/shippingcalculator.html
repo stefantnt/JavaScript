@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipping Calculator</title>
+  <style></style>
+</head>
+
+<body>
+  <p>Amazon Shipping Calculator</p>
+  <p>Orders under $40 = + $10 shipping.</p>
+  <p>Orders over $40 = FREE shipping.</p>
+  <input name="price of order" id="input" placeholder="cost of order">
+  <button onclick="
+  calculateTotal()
+  ">Calculate</button>
+
+  <p id="paragraf">total order</p>
+  <hr>
+  <p>Stefan TNT 2020</p>
+
+  <script>
+
+
+
+    function calculateTotal() {
+
+      let input = document.getElementById("input");
+      /* hvata ID html elementa moze se koristiti document.querySelector("#input") */
+
+      input = parseFloat(input.value);
+      /* uzima broj upisan u HTML input element. parseFloat() pretvara string u float tj broj sa zarezom, 
+      a mozes pretvoriti i u intiger sa parseInt() */
+
+      let shipping = parseFloat(10); // price of shipping for order under 40 $
+
+      let paragraf = document.getElementById("paragraf"); // uzima id paragrafa gde ce biti ispisan total order price
+
+      let under = ""; // cena ordera ako je ispod 40 $ gde se dodaje shipping
+      let over = ""; // cena ordera ako je iznad 40 $, i under i over se putem innerHTML ispisuju u paragrafu
+
+
+
+
+
+      if (input < 40) {
+        under = (input + shipping); // ako je cena ispod 40 dolara dodaje shipping 
+        paragraf.innerHTML = `Your total order is ${under}$, price of your product is ${input}$ and shipping is ${shipping}$.`;
+      } else {
+        over = (input); // ako je cena iznad 40 dolara nema shippinga
+        paragraf.innerHTML = `Your total order is ${over}$.`;
+      }
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>
