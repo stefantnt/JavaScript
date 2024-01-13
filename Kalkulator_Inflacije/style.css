@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('backgmoney.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	color: white;
+	max-height: 500px;
+
+}
+h1 {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+h2 {
+	margin-bottom: 15px;
+}
+
+h3 {
+	margin-bottom: 15px;
+}
+.background-overlay {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 50px;
+	width: 100%;
+	height: 100vh;
+	
+}
+
+
+
+.container {
+	max-width: 600px;
+	max-height: 350px;
+	border: 2px solid green;
+}
+
+.container button {
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: orange;
+	cursor: pointer;
+	border-radius: 10px;
+
+}
+
+.container input {
+	max-width: 80px;
+	height: 40px;
+	font-size: 18px;
+	text-align: center;
+}
+
+.new-value {
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+
+
